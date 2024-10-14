@@ -8,8 +8,7 @@
 
 nav {
   height: 80px;
-  background: #91542b;
-  font-family: 'Gagalin';
+background: linear-gradient(190deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%);  font-family: 'Gagalin';
 
   div {
     height: 100%;
@@ -18,11 +17,11 @@ nav {
 
     img {
       margin-left: 20px;
-      height: 60px;
+      height: 80px;
       transition: .3s;
 
       &:hover {
-        transform: scale(1.05);
+        animation: bounce 0.5s infinite alternate;
       }
     }
 
@@ -46,6 +45,15 @@ nav {
   transition: .3s;
 
   &:hover {
-    transform: scale(1.05);
+    animation: bounce 0.5s infinite alternate;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05); 
   }
 }
