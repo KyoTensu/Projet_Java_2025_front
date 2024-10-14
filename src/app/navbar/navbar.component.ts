@@ -8,9 +8,12 @@ import { Link } from "models/links.model"
 })
 export class NavbarComponent {
   links: Link[] = []
+  
 
   constructor() {
-    this.links.push({ name: "Students", href: "students" })
-    this.links.push({ name: "Majors", href: "majors" })
+    this.links.push({ name: "Artistes", href: "artistes" })
+    this.links.push({ name: "Lieux", href: "lieux" })
+    this.links.push({ name: "Bientôt", href: "bientot" })
+    this.links.push({ name: "Favoris", href: "favoris"})
   }
 }

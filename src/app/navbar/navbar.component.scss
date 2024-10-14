@@ -1,8 +1,15 @@
 @use "src/theme";
 
+@font-face {
+  font-family: 'Gagalin';
+  src: url('../../assets/Gagalin-Regular.otf') format('opentype');
+}
+
+
 nav {
   height: 80px;
-  background: linear-gradient(to right, theme.$common-purple, theme.$common-red);
+  background: #91542b;
+  font-family: 'Gagalin', sans-serif;
 
   div {
     height: 100%;
@@ -15,7 +22,7 @@ nav {
       transition: .3s;
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
     }
 
@@ -29,14 +36,16 @@ nav {
   margin-left: 50px;
   padding: 0;
   display: flex;
+  
 }
 
 .mat-list-base .mat-list-item {
-  font-size: large;
+  font-size: 1.5em;
+  font-family: 'Gagalin', sans-serif;
   color: theme.$white;
   transition: .3s;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 }
