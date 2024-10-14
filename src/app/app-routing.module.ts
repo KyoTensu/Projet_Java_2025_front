@@ -9,36 +9,30 @@ import { MajorsComponent } from "majors/majors.component"
 import { MajorsResolver } from "majors/majors.resolver"
 import { MajorStudentsResolver } from "majors/major-students/major-students.resolver"
 import { MajorStudentsComponent } from "majors/major-students/major-students.component"
+import { ArtistesComponent } from "artistes/artistes.component"
+import { LieuxComponent } from "lieux/lieux.component"
+import { BientotComponent } from "bientot/bientot.component"
+import { FavorisComponent } from "favoris/favoris.component"
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   {
-    path: "students",
-    component: StudentsComponent,
-    resolve: {
-      students: StudentsResolver,
-    },
+    path: "artistes",
+    component: ArtistesComponent,
   },
   {
-    path: "student-details/:id",
-    component: StudentDetailsComponent,
-    resolve: {
-      student: StudentDetailsResolver,
-    },
+    path: "lieux",
+    component: LieuxComponent,
   },
   {
-    path: "majors",
-    component: MajorsComponent,
-    resolve: {
-      majors: MajorsResolver,
-    },
+    path: "bientot",
+    component: BientotComponent,
+
   },
   {
-    path: "major-students/:id",
-    component: MajorStudentsComponent,
-    resolve: {
-      studentsFromMajor: MajorStudentsResolver,
-    },
+    path: "favoris",
+    component: FavorisComponent,
+
   },
 ]
 
