@@ -16,7 +16,10 @@ export class NavbarComponent {
     this.links.push({ name: "Lieux", href: "lieux" })
     this.links.push({ name: "Bientôt", href: "bientot" })
     this.links.push({ name: "Favoris", href: "favoris"})
+    this.links.push({ name: "Compte", href: "compte"})
   }
+
+
 
 
 }

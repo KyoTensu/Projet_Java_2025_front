@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Gagalin';
+    src: url('../../assets/Gagalin-Regular.otf') format('opentype');
+  }
+
+h1 {
+    font-family: 'Gagalin';
+    
+}
+
+.compte {
+    font-family: 'Gagalin';
+    font-size: 1.2em;
+    position: relative;
+    top: 3%;
+    left: 3%;
+    line-height: 50px;
+}

@@ -13,6 +13,7 @@ import { ArtistesComponent } from "artistes/artistes.component"
 import { LieuxComponent } from "lieux/lieux.component"
 import { BientotComponent } from "bientot/bientot.component"
 import { FavorisComponent } from "favoris/favoris.component"
+import { CompteComponent } from "compte/compte.component"
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -32,6 +33,11 @@ const routes: Routes = [
   {
     path: "favoris",
     component: FavorisComponent,
+
+  },
+  {
+    path: "compte",
+    component: CompteComponent,
 
   },
 ]

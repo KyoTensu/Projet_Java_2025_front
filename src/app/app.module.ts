@@ -18,7 +18,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { ArtistesComponent } from './artistes/artistes.component';
 import { LieuxComponent } from './lieux/lieux.component';
 import { FavorisComponent } from './favoris/favoris.component';
-import { BientotComponent } from './bientot/bientot.component'
+import { BientotComponent } from './bientot/bientot.component';
+import { CompteComponent } from './compte/compte.component'
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { BientotComponent } from './bientot/bientot.component'
     LieuxComponent,
     FavorisComponent,
     BientotComponent,
+    CompteComponent,
   ],
   imports: [
     BrowserModule,
