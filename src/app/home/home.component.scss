@@ -8,6 +8,7 @@
   align-items: center;
 
   .Background {
+    background-image: url('../../assets/backgroundcut.png');
     background-size: contain;
     background-position: center;
     width: 100%;
@@ -60,6 +61,7 @@
 
   
 }
+
 
 @keyframes bounce {
   from {
