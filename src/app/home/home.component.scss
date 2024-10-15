@@ -83,12 +83,7 @@
   }
 }
 
-.glow {
-  font-size: 2rem;
-  color: #fff;
-  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
-  animation: glow 1.5s infinite alternate;
-}
+
 
 @keyframes glow {
   0% {
