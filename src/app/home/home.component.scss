@@ -15,7 +15,7 @@
     height: auto;
     position: absolute;
     z-index: -1;
-    top: 0px;
+    top: 0px; 
       }
 
   .bouton {
@@ -41,6 +41,7 @@
     cursor: pointer;
     &:hover {
       background-color: rgb(83, 54, 54); 
+      color:rgb(255, 241, 165)
     }
 
 }
@@ -62,6 +63,13 @@
   
 }
 
+.pikachu {
+  width: 42px; 
+  height: auto; 
+  position: absolute;
+  top: 450px;
+  left: 750px;
+}
 
 @keyframes bounce {
   from {
@@ -71,3 +79,5 @@
     transform: scale(1.05); 
   }
 }
+
+
