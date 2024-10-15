@@ -19,6 +19,7 @@ background: linear-gradient(190deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 4
       margin-left: 20px;
       height: 80px;
       transition: .3s;
+      animation: float2 3s ease-in-out infinite;
 
       &:hover {
         animation: bounce 0.5s infinite alternate;
@@ -93,3 +94,13 @@ background: linear-gradient(190deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 4
   0%, 100% { opacity: 0; }
   30% { opacity: 1; }
 }
+
+@keyframes float2 {
+  0%, 100% {
+      transform: translateY(3px);
+  }
+  50% {
+      transform: translateY(-3px);
+  }
+}
+
