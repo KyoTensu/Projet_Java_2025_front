@@ -24,6 +24,7 @@
     background-color: rgb(200, 125, 76);
     border-radius: 50px;
     animation: bounce 0.5s infinite alternate, glow 0.5s infinite alternate;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 
     position: absolute;
     top: 70%;
@@ -90,7 +91,7 @@
       text-shadow: 0 0 3px rgb(255, 241, 165), 0 0 5px rgb(255, 241, 165), 0 0 8px rgb(255, 241, 165);
   }
   100% {
-      text-shadow: 0 0 5px rgb(200, 125, 76), 0 0 15px rgb(200, 125, 76), 0 0 20px rgb(200, 125, 76);
+      text-shadow: 0 0 5px black, 0 0 15px rgb(200, 125, 76), 0 0 20px rgb(200, 125, 76);
   }
 }
 

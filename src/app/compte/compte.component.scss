@@ -1,10 +1,18 @@
 @font-face {
     font-family: 'Gagalin';
     src: url('../../assets/Gagalin-Regular.otf') format('opentype');
-  }
+}
+
+
 
 h1 {
     font-family: 'Gagalin';
+    font-size: 2.5em;
+    text-align: center;
+    color: #533636; /* Muted color for elegance */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     
 }
 
@@ -12,7 +20,67 @@ h1 {
     font-family: 'Gagalin';
     font-size: 1.2em;
     position: relative;
-    top: 3%;
-    left: 3%;
-    line-height: 50px;
+    width: 50%; /* Modern width to center the form */
+    margin: 5% auto; /* Center horizontally and add space at the top */
+    padding: 40px;
+    background-color: #fff; /* White background for a clean look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners for a modern feel */
+    line-height: 1.5em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #91542b; /* Accent color for labels */
+}
+
+input[type="text"], input[type="email"] {
+    font-family: 'Gagalin';
+    font-size: 1.1em;
+    padding: 10px;
+    border: 1px solid #ddd; /* Subtle border for input fields */
+    border-radius: 5px;
+    outline: none;
+    background-color: #f9f9f9; /* Light background for input fields */
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #91542b; /* Accent color on focus */
+    box-shadow: 0 0 10px rgba(145, 84, 43, 0.2); /* Light shadow on focus */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.modify-button {
+    font-family: 'Gagalin';
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #ddd;
+}
+
+.modify-button.primary {
+    background-color: #91542b;
+    color: #fff;
+}
+
+.modify-button:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    background-color: #533636;
+    color: #fff;
 }
