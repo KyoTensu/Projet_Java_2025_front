@@ -6,7 +6,6 @@ import {
 } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { Artiste } from "../models/artiste.model"
-import { StudentService } from "../services/student.service"
 import { ArtisteService } from "../services/artiste.service"
 
 @Injectable({
@@ -19,3 +18,11 @@ export class BientotResolver implements Resolve<Artiste[]> {
     return this.artistService.findAll();
   }
 }
+
+// export class BientotResolver implements Resolve<Concert[]> {
+//   constructor(private concertService: ConcertService) {
+//   }
+//   resolve(): Observable<Concert[]> {
+//     return this.concertService.findAll();
+//   }
+// }

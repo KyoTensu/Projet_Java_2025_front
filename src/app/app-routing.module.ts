@@ -14,6 +14,7 @@ import { LieuxComponent } from "lieux/lieux.component"
 import { BientotComponent } from "bientot/bientot.component"
 import { FavorisComponent } from "favoris/favoris.component"
 import { CompteComponent } from "compte/compte.component"
+import { BientotResolver } from "./bientot/bientot.resolver"
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -28,7 +29,9 @@ const routes: Routes = [
   {
     path: "bientot",
     component: BientotComponent,
-
+    resolve: {
+      artists: BientotResolver
+    }
   },
   {
     path: "favoris",

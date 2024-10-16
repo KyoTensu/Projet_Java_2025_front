@@ -11,7 +11,7 @@ export class ArtisteService {
   constructor(private http: HttpClient) {
   }
 
-  private artistsUrl = "http://localhost:8080/artistes"
+  private artistsUrl = "http://localhost:8080/bientot"
 
   findAll(): Observable<Artiste[]> {
     return this.http.get<Artiste[]>(this.artistsUrl)
