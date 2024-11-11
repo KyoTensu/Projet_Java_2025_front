@@ -1,15 +1,28 @@
 import { Component, OnInit } from '@angular/core';
+// import { LieuService } from '../services/lieu.service';
+import { Lieu } from '../models/lieu.model';
 
 @Component({
-  selector: 'epf-lieux',
+  selector: 'app-lieux',
   templateUrl: './lieux.component.html',
   styleUrls: ['./lieux.component.scss']
 })
-export class LieuxComponent implements OnInit {
+export class LieuxComponent {
 
-  constructor() { }
+  artists: Lieu[] = [];
 
-  ngOnInit(): void {
-  }
+
+  // constructor(private lieuService: LieuService) {}
+
+  // ngOnInit(): void {
+  //   this.lieuService.findAll().subscribe(
+  //     (data: Lieu[]) => {
+  //       this.lieux = data;
+  //     },
+  //     error => {
+  //       console.error('Error fetching lieux:', error);
+  //     }
+  //   );
+  // }
 
 }

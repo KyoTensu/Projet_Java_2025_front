@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { Lieu } from '../../models/lieu.model';
+
 
 @Component({
-  selector: 'epf-lieux-cards',
+  selector: 'app-lieux-cards',
   templateUrl: './lieux-cards.component.html',
   styleUrls: ['./lieux-cards.component.scss']
 })
-export class LieuxCardsComponent implements OnInit {
+export class LieuxCardsComponent  {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  // @Input() lieu!: Lieu;
 
 }

@@ -1,1 +1,6 @@
-<p>artistes works!</p>
+<div class="artists-container">
+  <img class="Background" src="assets/oldbackgroundnologo.png" rel="preload" alt="Background">
+
+    <app-artistes-cards *ngFor="let artist of artists" [artist]="artist"></app-artistes-cards>
+  </div>
+  

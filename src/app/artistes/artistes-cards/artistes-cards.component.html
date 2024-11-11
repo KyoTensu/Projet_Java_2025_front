@@ -1,1 +1,10 @@
-<p>artistes-cards works!</p>
+<div class="artist-card">
+    <img src="../../assets/Photos/{{artist.id}}.jpg"  class="artist-image">
+    <div class="artist-info">
+      <h3>{{ artist.name }}</h3>
+      <p>{{ artist.isGroup ? "Group" : "Solo Artist" }}</p>
+      <p>Born on: {{ artist.birthDate | date: 'longD    ate' }}</p>
+    </div>
+  </div>
+  
+  

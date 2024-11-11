@@ -20,8 +20,8 @@ import { LieuxComponent } from './lieux/lieux.component';
 import { FavorisComponent } from './favoris/favoris.component';
 import { BientotComponent } from './bientot/bientot.component';
 import { CompteComponent } from './compte/compte.component';
-import { ArtistesCardsComponent } from './artistes-cards/artistes-cards.component';
-import { LieuxCardsComponent } from './lieux-cards/lieux-cards.component'
+import { ArtistesCardsComponent } from './artistes/artistes-cards/artistes-cards.component';
+import { LieuxCardsComponent } from './lieux/lieux-cards/lieux-cards.component';
 
 @NgModule({
   declarations: [

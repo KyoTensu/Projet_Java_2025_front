@@ -1,8 +1,28 @@
-body {
-    text-align: center;
-    font-family: Gagalin;
-    color: #000000;
-    font-size: 3.5em;
-    font-weight: 700;
-    margin: 30px 0;
-  }
+:host {
+  display: block;
+  min-height: 100vh;
+  
+  padding-top: 20px; /* Adjust to add some space around cards */
+
+  .Background {
+    background-image: url('../../assets/oldbackgroundnologo.png');
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 0px; 
+      }
+}
+
+.artists-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  background-color: #f4f4f400;
+}
+
+
