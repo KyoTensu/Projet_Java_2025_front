@@ -1,6 +1,5 @@
 export interface Concert {
   id: bigint
+  capacity: number
   name: string
-  debut: Date
-  fin: Date
 }

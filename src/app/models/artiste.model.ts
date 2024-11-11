@@ -3,5 +3,4 @@ export interface Artiste {
   name: string
   isGroup: boolean
   birthDate: Date
-
 }
