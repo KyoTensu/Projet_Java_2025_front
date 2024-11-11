@@ -19,7 +19,9 @@ import { ArtistesComponent } from './artistes/artistes.component';
 import { LieuxComponent } from './lieux/lieux.component';
 import { FavorisComponent } from './favoris/favoris.component';
 import { BientotComponent } from './bientot/bientot.component';
-import { CompteComponent } from './compte/compte.component'
+import { CompteComponent } from './compte/compte.component';
+import { ArtistesCardsComponent } from './artistes-cards/artistes-cards.component';
+import { LieuxCardsComponent } from './lieux-cards/lieux-cards.component'
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { CompteComponent } from './compte/compte.component'
     FavorisComponent,
     BientotComponent,
     CompteComponent,
+    ArtistesCardsComponent,
+    LieuxCardsComponent,
   ],
   imports: [
     BrowserModule,
