@@ -2,6 +2,7 @@
 import { Component, Input } from '@angular/core';
 import { Artiste } from '../../models/artiste.model';
 
+
 @Component({
   selector: 'app-artistes-cards',
   templateUrl: './artistes-cards.component.html',

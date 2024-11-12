@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Lieu } from '../../models/lieu.model';
 
 
@@ -9,6 +9,6 @@ import { Lieu } from '../../models/lieu.model';
 })
 export class LieuxCardsComponent  {
 
-  // @Input() lieu!: Lieu;
+  @Input() lieu!: Lieu;
 
 }

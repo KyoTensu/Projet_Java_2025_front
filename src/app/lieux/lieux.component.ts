@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { LieuService } from '../services/lieu.service';
+import { LieuService } from '../services/lieu.service';
 import { Lieu } from '../models/lieu.model';
 
 @Component({
@@ -9,20 +9,20 @@ import { Lieu } from '../models/lieu.model';
 })
 export class LieuxComponent {
 
-  artists: Lieu[] = [];
+  lieux: Lieu[] = [];
 
 
-  // constructor(private lieuService: LieuService) {}
+  constructor(private lieuService: LieuService) {}
 
-  // ngOnInit(): void {
-  //   this.lieuService.findAll().subscribe(
-  //     (data: Lieu[]) => {
-  //       this.lieux = data;
-  //     },
-  //     error => {
-  //       console.error('Error fetching lieux:', error);
-  //     }
-  //   );
-  // }
+  ngOnInit(): void {
+    this.lieuService.findAll().subscribe(
+      (data: Lieu[]) => {
+        this.lieux = data;
+      },
+      error => {
+        console.error('Error fetching lieux:', error);
+      }
+    );
+  }
 
 }
