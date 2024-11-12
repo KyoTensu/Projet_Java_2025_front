@@ -1,11 +1,20 @@
 :host {
     display: block;
     min-height: 100vh;
-    background: linear-gradient(135deg, #8ec5fc, #e0c3fc, #fbc2eb, #a6c1ee);
-    background-size: 400% 400%;
-    animation: gradientBackground 15s ease infinite;
-    padding-top: 20px;
-}
+    
+    padding-top: 20px; /* Adjust to add some space around cards */
+  
+    .Background {
+      background-image: url('../../assets/oldbackgroundnologo.png');
+      background-size: contain;
+      background-position: center;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      z-index: -1;
+      top: 0px; 
+        }
+  }
 
 .venues-container {
     display: flex;
