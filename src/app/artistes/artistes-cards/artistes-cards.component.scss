@@ -14,7 +14,15 @@
 
 .artist-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: rainbowShadow 1.5s infinite alternate;
+}
+
+@keyframes rainbowShadow {
+    0% { box-shadow: 0 8px 20px rgba(255, 0, 0, 0.6); }
+    25% { box-shadow: 0 8px 20px rgba(255, 165, 0, 0.6); }
+    50% { box-shadow: 0 8px 20px rgba(0, 255, 0, 0.6); }
+    75% { box-shadow: 0 8px 20px rgba(0, 0, 255, 0.6); }
+    100% { box-shadow: 0 8px 20px rgba(255, 0, 255, 0.6); }
 }
 
 .artist-image {
