@@ -22,6 +22,8 @@ import { BientotComponent } from './bientot/bientot.component';
 import { CompteComponent } from './compte/compte.component';
 import { ArtistesCardsComponent } from './artistes/artistes-cards/artistes-cards.component';
 import { LieuxCardsComponent } from './lieux/lieux-cards/lieux-cards.component';
+import { ArtisteDetailsComponent } from './artiste-details/artiste-details.component';
+import { ConcertDetailsComponent } from './concert-details/concert-details.component'
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { LieuxCardsComponent } from './lieux/lieux-cards/lieux-cards.component';
     CompteComponent,
     ArtistesCardsComponent,
     LieuxCardsComponent,
+    ArtisteDetailsComponent,
+    ConcertDetailsComponent,
   ],
   imports: [
     BrowserModule,

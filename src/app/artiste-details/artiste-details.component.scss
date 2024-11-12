@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Gagalin';
+  src: url('../../assets/Gagalin-Regular.otf') format('opentype');
+}
+
+body {
+  font-family: 'Gagalin';
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.Background {
+  background-image: url('../../assets/background.png');
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+}
+
+.festival-table {
+  width: 90%; /* Increase width for better use of space */
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255); /* Added transparency for modern look */
+  border-radius: 10px; /* Rounded corners for a softer design */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Updated shadow for more depth */
+  overflow: hidden; /* Ensures the table fits within the rounded corners */
+  transition: transform 0.3s ease; /* Smooth transition when hovered */
+}
+
+.festival-table:hover {
+  transform: scale(1.02); /* Slight scale-up for interactivity */
+}
+
+.festival-table th, .festival-table td {
+  padding: 20px; /* Increased padding for better spacing */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Gagalin';
+  color: #533636; /* More muted brown for readability */
+  font-size: 1.1em;
+  letter-spacing: 0.05em; /* Slight letter spacing for modern touch */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transitions */
+}
+
+.festival-table th {
+  background-color: rgb(255, 241, 165);
+  color: #533636;
+  font-weight: bold;
+  font-family: 'Gagalin';
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+}
+
+.festival-table tr:hover td {
+  background-color: rgba(145, 84, 43, 0.1); /* Subtle hover effect on rows */
+  color: #91542b; /* Slight color change on hover */
+}
+
+.festival-table tr:last-child td {
+  border-bottom: none;
+}
+
+.festival-table thead tr {
+  border-bottom: 5px solid #91542b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .festival-table {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .festival-table th, .festival-table td {
+    padding: 15px;
+    font-size: 1em;
+  }
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  //height: 100vh; /* Full height of the viewport */
+}
+
+/* Left column styles */
+.left {
+  flex: 1; /* Takes up 50% width */
+  padding: 20px; /* Light gray background */
+  width: 90%;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255); /* Added transparency for modern look */
+  border-radius: 10px; /* Rounded corners for a softer design */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Updated shadow for more depth */
+  overflow: hidden; /* Ensures the table fits within the rounded corners */
+  text-align: center;
+}
+
+/* Right column styles */
+.right {
+  flex: 1; /* Takes up 50% width */
+  padding: 20px; /* Slightly darker gray */
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+p {
+  font-family: 'Gagalin';
+  font-size: large;
+  text-align: left;
+}
+
+span {
+  font-family: 'Arial';
+  font-size: large;
+}
