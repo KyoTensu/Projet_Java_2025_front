@@ -16,4 +16,8 @@ export class ArtisteService {
   findAll(): Observable<Artiste[]> {
     return this.http.get<Artiste[]>(this.artistsUrl)
   }
+
+  findbyId(id: Number): Observable<Artiste> {
+    return this.http.get<Artiste>(this.artistsUrl+"/"+id.toString())
+  }
 }
