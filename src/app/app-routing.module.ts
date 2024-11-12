@@ -15,6 +15,7 @@ import { BientotComponent } from "bientot/bientot.component"
 import { FavorisComponent } from "favoris/favoris.component"
 import { CompteComponent } from "compte/compte.component"
 import { BientotResolver } from "./bientot/bientot.resolver"
+import { ArtisteDetailsComponent } from "./artiste-details/artiste-details.component"
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -42,6 +43,10 @@ const routes: Routes = [
     path: "compte",
     component: CompteComponent,
 
+  },
+  {
+    path: "artiste_details",
+    component: ArtisteDetailsComponent,
   },
 ]
 
