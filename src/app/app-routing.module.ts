@@ -16,6 +16,7 @@ import { FavorisComponent } from "favoris/favoris.component"
 import { CompteComponent } from "compte/compte.component"
 import { BientotResolver } from "./bientot/bientot.resolver"
 import { ArtisteDetailsComponent } from "./artiste-details/artiste-details.component"
+import { ConcertDetailsComponent } from "./concert-details/concert-details.component"
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: "artiste_details",
     component: ArtisteDetailsComponent,
+  },
+  {
+    path: "concert_details",
+    component: ConcertDetailsComponent,
   },
 ]
 
