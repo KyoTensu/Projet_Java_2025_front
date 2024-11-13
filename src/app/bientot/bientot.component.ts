@@ -13,10 +13,21 @@ import { ConcertService } from "../services/concert.service"
   styleUrls: ['./bientot.component.scss']
 })
 export class BientotComponent {
-  artists$: Observable<Artiste[]> = this._route.data.pipe(map((data) => data["artists"]))
+  concerts: Concert[] = []
+  id: Number | null = null
 
-  constructor(private _route: ActivatedRoute, private artistService: ArtisteService, private router: Router,) { }
+  constructor(private route: ActivatedRoute, private concertService: ConcertService) { }
 
+  ngOnInit(): void{
+    this.concertService.findAll().subscribe(
+      (data: Concert[]) => {
+        this.concerts = data;
+      },
+      error => {
+        console.error('Error fetching concerts:', error);
+      }
+    );
+  }
 }
 
 // export class BientotComponent {

@@ -31,9 +31,6 @@ const routes: Routes = [
   {
     path: "bientot",
     component: BientotComponent,
-    resolve: {
-      artists: BientotResolver
-    }
   },
   {
     path: "favoris",
