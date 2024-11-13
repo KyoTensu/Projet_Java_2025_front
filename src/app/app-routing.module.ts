@@ -46,7 +46,7 @@ const routes: Routes = [
 
   },
   {
-    path: "artiste_details",
+    path: "artistes/:id",
     component: ArtisteDetailsComponent,
   },
   {
