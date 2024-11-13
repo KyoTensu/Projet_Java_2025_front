@@ -1,10 +1,12 @@
 <img class="Background" src="assets/background.png" rel="preload" alt="Background">
 <div class="container">
   <div class="left">
-    <img src="assets/Photos/2.jpg" width="400" height="400">
+    <img src="assets/Lieux/{{concert.lieu.id}}.jpg" width="400" height="400">
     <p></p>
-    <p>Nom : <span>HellFest</span></p>
-    <p>Pays : <span>France</span></p>
+    <p>Nom : <span>{{concert.concertName}}</span></p>
+    <p>Localisation : <span>{{concert.lieu.name}}</span></p>
+    <p>Date de début : <span>{{concert.debut | date : "dd/MM/yyyy"}}</span></p>
+    <p>Date de fin : <span>{{concert.fin | date : "dd/MM/yyyy"}}</span></p>
   </div>
   <div class="right">
     <table class="artiste-table">
@@ -15,13 +17,9 @@
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>Queen</td>
-        <td>Royaume-Uni</td>
-      </tr>
-      <tr>
-        <td>Francis Cabrel</td>
-        <td>France</td>
+      <tr *ngFor="let artist of concert.artistes">
+        <td>{{artist.name}}</td>
+        <td>{{artist.nationalite.name}}</td>
       </tr>
       </tbody>
     </table>

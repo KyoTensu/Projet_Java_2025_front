@@ -50,7 +50,7 @@ const routes: Routes = [
     component: ArtisteDetailsComponent,
   },
   {
-    path: "concert_details",
+    path: "concerts/:id",
     component: ConcertDetailsComponent,
   },
 ]

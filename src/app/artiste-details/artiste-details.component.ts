@@ -26,7 +26,6 @@ export class ArtisteDetailsComponent implements OnInit {
         console.error('Error fetching the artist:', error);
       }
     );
-    console.log(this.artiste)
   }
 
 }
