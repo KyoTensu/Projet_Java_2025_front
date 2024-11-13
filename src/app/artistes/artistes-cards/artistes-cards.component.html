@@ -2,8 +2,8 @@
     <img src="../../assets/Photos/{{artist.id}}.jpg"  class="artist-image">
     <div class="artist-info">
       <h3>{{ artist.name }}</h3>
-      <p>{{ artist.isGroup ? "Group" : "Solo Artist" }}</p>
-      <p>Born on: {{ artist.birthDate | date: 'longDate' }}</p>
+      <p>{{ artist.isGroup ? "Groupe" : "Artiste solo" }}</p>
+      <p>{{ artist.style.name }}</p>
     </div>
   </div>
   
