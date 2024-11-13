@@ -1,6 +1,7 @@
 // artistes-cards.component.ts
 import { Component, Input } from '@angular/core';
 import { Artiste } from '../../models/artiste.model';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,4 +11,10 @@ import { Artiste } from '../../models/artiste.model';
 })
 export class ArtistesCardsComponent {
   @Input() artist!: Artiste;
+
+  constructor(private router: Router) {}
+
+  goToArtistDetail() {
+    this.router.navigate(['/artistes', this.artist.id]);
+  }
 }
