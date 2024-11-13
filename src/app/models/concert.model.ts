@@ -1,6 +1,9 @@
+import { Lieu } from "./lieu.model"
+
 export interface Concert {
   id: bigint
-  name: string
+  concertName: string
   debut: Date
   fin: Date
+  lieu: Lieu
 }

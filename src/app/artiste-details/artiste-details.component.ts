@@ -15,7 +15,7 @@ export class ArtisteDetailsComponent implements OnInit {
   constructor(private artisteService: ArtisteService) { }
 
   ngOnInit(): void {
-    this.artisteService.findbyId(2).subscribe(
+    this.artisteService.findbyId(1).subscribe(
       (data: Artiste) => {
         this.artiste = data;
       },

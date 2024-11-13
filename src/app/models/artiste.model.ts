@@ -8,6 +8,6 @@ export interface Artiste {
   isGroup: boolean
   birthDate: Date
   style: Style
-  nationality: Nationalite
+  nationalite: Nationalite
   concerts: Concert[]
 }
