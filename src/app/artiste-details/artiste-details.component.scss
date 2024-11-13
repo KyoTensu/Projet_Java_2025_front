@@ -120,6 +120,15 @@ body {
 
 .left img:hover {
   transform: scale(1.05); /* Slight scale up effect */
+  animation: rainbowShadow 1.5s infinite alternate;
+}
+
+@keyframes rainbowShadow {
+  0% { box-shadow: 0 8px 20px rgba(255, 0, 0, 0.6); }
+  25% { box-shadow: 0 8px 20px rgba(255, 165, 0, 0.6); }
+  50% { box-shadow: 0 8px 20px rgba(0, 255, 0, 0.6); }
+  75% { box-shadow: 0 8px 20px rgba(0, 0, 255, 0.6); }
+  100% { box-shadow: 0 8px 20px rgba(255, 0, 255, 0.6); }
 }
 
 .left p {
@@ -128,6 +137,25 @@ body {
   margin: 0.5em 0;
   text-align: center;
 }
+
+.left p span {
+  color: #91542b;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .left {
+      max-width: 100%;
+      padding: 1em;
+  }
+
+  .left img {
+      max-width: 100%;
+  }
+}
+
 
 .left p span {
   color: #91542b;
