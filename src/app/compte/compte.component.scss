@@ -13,7 +13,7 @@ h1 {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    
+
 }
 
 .compte {
@@ -41,7 +41,7 @@ label {
     color: #91542b; /* Accent color for labels */
 }
 
-input[type="text"], input[type="email"] {
+input[type="text"], input[type="password"], input[type="email"] {
     font-family: 'Gagalin';
     font-size: 1.1em;
     padding: 10px;
@@ -52,7 +52,7 @@ input[type="text"], input[type="email"] {
     transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-input[type="text"]:focus, input[type="email"]:focus {
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
     border-color: #91542b; /* Accent color on focus */
     box-shadow: 0 0 10px rgba(145, 84, 43, 0.2); /* Light shadow on focus */
 }
