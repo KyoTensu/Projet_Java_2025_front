@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Concert } from "../models/concert.model"
 import { ConcertService } from "../services/concert.service"
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'epf-concert-details',
@@ -12,7 +13,7 @@ export class ConcertDetailsComponent implements OnInit {
   concert: Concert = ({} as any) as Concert
   id : string | null = null
 
-  constructor(private concertService: ConcertService, private route: ActivatedRoute) { }
+  constructor(private concertService: ConcertService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {this.id = params.get('id')})
@@ -25,5 +26,10 @@ export class ConcertDetailsComponent implements OnInit {
       }
     );
   }
+  onArtistClick(id: Number){
+    this.router.navigate(['/artistes/'+id])
+  }
+
+  protected readonly Number = Number
 
 }

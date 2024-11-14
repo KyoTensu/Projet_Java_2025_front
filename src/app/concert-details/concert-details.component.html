@@ -1,4 +1,4 @@
-<img class="Background" src="assets/background.png" rel="preload" alt="Background">
+<img class="Background" src="assets/backgroundnologo.png" rel="preload" alt="Background">
 <div class="container">
   <div class="left">
     <img src="assets/Lieux/{{concert.lieu.id}}.jpg" width="400" height="400">
@@ -17,7 +17,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let artist of concert.artistes">
+      <tr *ngFor="let artist of concert.artistes" (click)="onArtistClick(Number(artist.id))">
         <td>{{artist.name}}</td>
         <td>{{artist.nationalite.name}}</td>
       </tr>
