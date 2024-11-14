@@ -1,23 +1,19 @@
 <div class="compte">
     <h1>MON COMPTE</h1>
-    
+
     <div class="form-group">
-        <label for="nom">NOM :</label>
-        <input type="text" id="nom" placeholder="Votre nom">
+        <label for="email">ADRESSE MAIL :</label>
+        <label *ngIf="isconnected">Connecté en tant que : {{user?.mail}}</label>
+        <input type="email" id="email" placeholder="Votre adresse mail" [(ngModel)]="mail">
     </div>
-    
+
     <div class="form-group">
-        <label for="prenom">PRENOM :</label>
-        <input type="text" id="prenom" placeholder="Votre prénom">
+      <label for="password">MOT DE PASSE :</label>
+      <input type="password" id="password" placeholder="Mot de passe" [(ngModel)]="password">
     </div>
-    
-    <div class="form-group">
-        <label for="email">ADRESSE MAIL :</label>   
-        <input type="email" id="email" placeholder="Votre adresse mail">
-    </div>
-    
+
     <div class="button-container">
-        <button class="modify-button primary">Connexion</button>
-        <button class="modify-button">MODIFIER SON MOT DE PASSE</button>
+        <button class="modify-button primary" (click)="onConnectButtonClick()">Connexion</button>
+        <button class="modify-button" (click)="onDisconnectButtonClick()">DECONNEXION</button>
     </div>
 </div>
