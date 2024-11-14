@@ -22,11 +22,16 @@ export class CompteComponent implements OnInit {
       (data: Utilisateur) => {
         this.user = data;
         localStorage.setItem('user_id', this.user.id.toString())
-        this.router.navigate(['/bientot'])
+        this.router.navigate(['/favoris'])
       },
       error => {
         console.error('Error fetching the user:', error);
       }
     );
+  }
+
+  onDisconnectButtonClick(){
+    localStorage.removeItem('user_id')
+    this.router.navigate(['/'])
   }
 }
