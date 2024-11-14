@@ -12,10 +12,25 @@ export class CompteComponent implements OnInit {
   user: Utilisateur | null = null
   mail: string = ''
   password: string = ''
+  isconnected: boolean = false
 
   constructor(private userService: UtilisateurService, private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    if(localStorage.getItem('user_id') != null){
+      this.isconnected = true
+      this.userService.findById(Number(localStorage.getItem('user_id'))).subscribe(
+        (data: Utilisateur) => {
+          this.user = data
+        },
+        error => {
+          console.error('Error fetching the user:', error);
+        }
+      )
+    }else{
+      this.isconnected = false
+    }
+  }
 
   onConnectButtonClick() {
     this.userService.connectUser(this.mail, this.password).subscribe(
@@ -25,7 +40,7 @@ export class CompteComponent implements OnInit {
         this.router.navigate(['/favoris'])
       },
       error => {
-        console.error('Error fetching the user:', error);
+        console.error('Error connecting to user:', error);
       }
     );
   }
