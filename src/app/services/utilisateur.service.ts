@@ -13,6 +13,10 @@ export class UtilisateurService {
   private userURL = "http://localhost:8080/utilisateurs"
 
   connectUser(mail: string, password: string): Observable<Utilisateur>{
-    return this.http.get<Utilisateur>(this.userURL+"/"+mail+"/"+password)
+    return this.http.get<Utilisateur>(this.userURL+"/authentification/"+mail+"/"+password)
+  }
+
+  findById(id: Number): Observable<Utilisateur>{
+    return this.http.get<Utilisateur>(this.userURL+"/"+id)
   }
 }

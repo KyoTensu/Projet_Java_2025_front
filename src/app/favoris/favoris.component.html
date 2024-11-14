@@ -1,1 +1,19 @@
-<p>favoris works!</p>
+<img class="Background" src="assets/backgroundnologo.png" rel="preload" alt="Background">
+<table class="festival-table">
+  <thead>
+  <tr>
+    <th>FESTIVAL</th>
+    <th>LIEU</th>
+    <th>DATE DE DEBUT</th>
+    <th>DATE DE FIN</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let concert of concerts">
+    <td>{{concert.concertName}}</td>
+    <td>{{concert.lieu.name}}</td>
+    <td>{{concert.debut | date : "dd/MM/yyyy"}}</td>
+    <td>{{concert.fin | date : "dd/MM/yyyy"}}</td>
+  </tr>
+  </tbody>
+</table>
