@@ -9,7 +9,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let concert of concerts">
+            <tr *ngFor="let concert of concerts" (click)="onConcertClick(Number(concert.id))">
               <td>{{concert.concertName}}</td>
               <td>{{concert.lieu.name}}</td>
               <td>{{concert.debut | date : "dd/MM/yyyy"}}</td>

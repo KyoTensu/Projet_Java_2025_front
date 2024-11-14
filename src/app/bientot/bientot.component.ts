@@ -16,7 +16,7 @@ export class BientotComponent {
   concerts: Concert[] = []
   id: Number | null = null
 
-  constructor(private route: ActivatedRoute, private concertService: ConcertService) { }
+  constructor(private route: ActivatedRoute, private concertService: ConcertService, private router: Router) { }
 
   ngOnInit(): void{
     this.concertService.findAll().subscribe(
@@ -28,6 +28,12 @@ export class BientotComponent {
       }
     );
   }
+
+  onConcertClick(id: Number){
+    this.router.navigate(['/concerts/'+id])
+  }
+
+  protected readonly Number = Number
 }
 
 // export class BientotComponent {

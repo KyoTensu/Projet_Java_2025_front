@@ -34,4 +34,9 @@ export class FavorisComponent implements OnInit {
     }
   }
 
+  onConcertClick(id: Number){
+    this.router.navigate(['/concerts/'+id])
+  }
+
+  protected readonly Number = Number
 }
