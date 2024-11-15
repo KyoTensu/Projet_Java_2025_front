@@ -23,3 +23,9 @@ Run `npm i` dans un terminal au sein du répertoire front-end.
 ## Pour lancer le projet
 
 Cliquer sur play ou exécuter `ng serve` et se rendre sur `http://localhost:4200/`
+
+## Pour tester complètement
+
+Deux faux comptes sont mis en place pour pouvoir tester la connexion à un compte et les fonctionnalitées en découlant :
+Compte 1: mail: mathieu.roubaud@epfedu.fr    mdp: 123456
+Compte 2: mail: loic.champeau@epfedu.fr    mdp: 123456
